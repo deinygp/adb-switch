@@ -160,6 +160,17 @@
             android:paddingHorizontal="18dp"
             android:paddingVertical="6dp" />
 
+        <TextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/ui_accent"
+            android:textSize="14sp" />
+
         <Button
             android:id="@+id/privacy"
             style="@style/Btn.Tonal"

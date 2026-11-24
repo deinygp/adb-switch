@@ -58,6 +58,7 @@
 
     <string name="ad_label">Ad</string>
     <string name="privacy_options">Privacy options</string>
+    <string name="privacy_policy">Privacy policy</string>
 
     <string name="faq_title">Troubleshooting</string>
     <string-array name="faq_symptoms">

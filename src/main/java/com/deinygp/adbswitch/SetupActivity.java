@@ -37,6 +37,7 @@ public class SetupActivity extends Activity {
     private static final int OK = 0, WARN = 1, ERR = 2;
     static final String GRANT_CMD = "adb shell pm grant com.deinygp.adbswitch android.permission.WRITE_SECURE_SETTINGS";
     private static final String ISSUES_URL = "https://github.com/deinygp/adb-switch/issues";
+    private static final String PRIVACY_URL = "https://deinygp.github.io/adb-switch/privacy.html";
 
     private LinearLayout checks;
 
@@ -46,6 +47,7 @@ public class SetupActivity extends Activity {
         setContentView(R.layout.activity_setup);
         checks = findViewById(R.id.checks);
         renderFaq();
+        findViewById(R.id.privacy_policy).setOnClickListener(open(new Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_URL))));
         requestConsentThenAds();
     }
 

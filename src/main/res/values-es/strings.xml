@@ -56,6 +56,7 @@
 
     <string name="ad_label">Publicidad</string>
     <string name="privacy_options">Opciones de privacidad</string>
+    <string name="privacy_policy">Política de privacidad</string>
 
     <string name="faq_title">Problemas frecuentes</string>
     <string-array name="faq_symptoms">
