@@ -11,7 +11,8 @@ Android home-screen widget to turn **USB debugging** on and off with one tap.
 - Segmented switch, 1 cell tall; width resizes from 1 to 4+ cells and the content adapts (icon only → "ADB" → "Depuración" → "Depuración USB").
 - Tap anywhere on the widget.
 - Light and dark mode, following the system theme.
-- No activity, no background services, no network permission: a single `AppWidgetProvider`.
+- Built-in setup guide (open the app): checks the permission, whether the state can be read, developer options and whether the widget is on the home screen, and shows the symptom and fix for each problem, plus a troubleshooting list. Without the permission, tapping the widget opens this guide.
+- Small ads on the setup screen only (AdMob, with GDPR consent); the widget never shows ads. No background services. English and Spanish UI.
 
 ### Requirements
 
@@ -24,7 +25,7 @@ Android home-screen widget to turn **USB debugging** on and off with one tap.
 The app needs `WRITE_SECURE_SETTINGS`, a permission that can only be granted through adb:
 
 ```sh
-adb install adb-switch.apk
+# install from Google Play, or: adb install adb-switch.apk
 adb shell pm grant com.deinygp.adbswitch android.permission.WRITE_SECURE_SETTINGS
 ```
 
@@ -34,13 +35,14 @@ Then long-press the home screen → **Widgets** → **ADB Switch**.
 
 ### Build from source
 
-No Gradle: `build.sh` builds with the Android SDK tools (`aapt2`, `javac`, `d8`, `apksigner`), installs on the connected device and grants the permission.
+Gradle project (Android Gradle Plugin 9, JDK 17+):
 
 ```sh
-./build.sh
+./build.sh                 # debug build, install on the connected device and grant the permission
+./gradlew bundleRelease    # Play bundle: build/outputs/bundle/release/adb-switch-release.aab
 ```
 
-Requires `ANDROID_HOME` with `build-tools/36.0.0` and `platforms/android-36`, a JDK, and the debug keystore at `~/.android/debug.keystore`. On Windows it runs from Git Bash.
+Release signing reads `ADBSWITCH_KEYSTORE`, `ADBSWITCH_KEY_ALIAS` and `ADBSWITCH_KEY_PASSWORD` from `~/.gradle/gradle.properties` (never from the repo). Ad unit IDs live in `src/main/res/values/ads.xml` (Google test IDs by default).
 
 ### Notes
 
@@ -62,7 +64,8 @@ Widget de Android para activar y desactivar la **depuración USB** con un toque 
 - Switch segmentado de 1 celda de alto; el ancho se ajusta de 1 a 4+ celdas y el contenido se adapta (solo ícono → «ADB» → «Depuración» → «Depuración USB»).
 - Se toca en cualquier punto del widget.
 - Modo claro y oscuro según el tema del sistema.
-- Sin activity, sin servicios en segundo plano, sin permisos de red: un único `AppWidgetProvider`.
+- Guía de configuración integrada (al abrir la app): revisa el permiso, si se puede leer el estado, las Opciones de desarrollador y si el widget está en pantalla, y muestra síntoma y solución para cada problema, además de una lista de problemas frecuentes. Sin el permiso, tocar el widget abre esta guía.
+- Anuncios pequeños solo en la pantalla de configuración (AdMob, con consentimiento GDPR); el widget nunca muestra anuncios. Sin servicios en segundo plano. Interfaz en inglés y español.
 
 ### Requisitos
 
@@ -85,13 +88,14 @@ Luego mantén presionada la pantalla de inicio → **Widgets** → **ADB Switch*
 
 ### Compilar desde el código
 
-No usa Gradle: `build.sh` compila con las herramientas del Android SDK (`aapt2`, `javac`, `d8`, `apksigner`), instala en el dispositivo conectado y otorga el permiso.
+Proyecto Gradle (Android Gradle Plugin 9, JDK 17+):
 
 ```sh
-./build.sh
+./build.sh                 # build debug, instala en el dispositivo conectado y otorga el permiso
+./gradlew bundleRelease    # bundle para Play: build/outputs/bundle/release/adb-switch-release.aab
 ```
 
-Requiere `ANDROID_HOME` con `build-tools/36.0.0` y `platforms/android-36`, un JDK y la keystore de debug en `~/.android/debug.keystore`. En Windows funciona desde Git Bash.
+La firma de release lee `ADBSWITCH_KEYSTORE`, `ADBSWITCH_KEY_ALIAS` y `ADBSWITCH_KEY_PASSWORD` desde `~/.gradle/gradle.properties` (nunca del repo). Los IDs de anuncios están en `src/main/res/values/ads.xml` (IDs de prueba de Google por defecto).
 
 ### Notas
 

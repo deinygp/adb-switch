@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo oscuro (colores del prototipo C2) -->
+<resources>
+    <color name="widget_bg">#2A2B2F</color>
+    <color name="ghost">#A9ACAA</color>
+    <color name="title">#E3E3E3</color>
+
+    <color name="ind_on_bg">#22352A</color>
+    <color name="ind_on_border">#A8DAB5</color>
+    <color name="circle_on">#A8DAB5</color>
+    <color name="icon_on">#0A3818</color>
+    <color name="status_on">#A8DAB5</color>
+
+    <color name="ind_off_bg">#3A3B40</color>
+    <color name="ind_off_border">#3A3B40</color>
+    <color name="circle_off">#4A4B50</color>
+    <color name="icon_off">#C4C7C5</color>
+    <color name="status_off">#A9ACAA</color>
+
+    <!-- Pantalla de configuración -->
+    <color name="ui_bg">#121316</color>
+    <color name="ui_surface">#1E1F23</color>
+    <color name="ui_stroke">#2E3035</color>
+    <color name="ui_text">#E8E9EB</color>
+    <color name="ui_text2">#B9BCC0</color>
+    <color name="ui_text3">#9A9EA4</color>
+    <color name="ui_accent">#A8DAB5</color>
+    <color name="ui_on_accent">#0A3818</color>
+    <color name="ui_tonal">#22352A</color>
+    <color name="ui_on_tonal">#A8DAB5</color>
+    <color name="ok">#A8DAB5</color>
+    <color name="ok_cont">#1E2E23</color>
+    <color name="warn">#F6C36B</color>
+    <color name="warn_cont">#3A2E17</color>
+    <color name="err">#FFB4AB</color>
+    <color name="err_cont">#3B1F1D</color>
+    <color name="code_bg">#2A2B2F</color>
+</resources>

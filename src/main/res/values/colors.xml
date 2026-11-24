@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo claro -->
+<resources>
+    <color name="widget_bg">#ECEEF0</color>
+    <color name="ghost">#5F6368</color>
+    <color name="title">#1B1C1F</color>
+
+    <color name="ind_on_bg">#D7EEDC</color>
+    <color name="ind_on_border">#2E7D47</color>
+    <color name="circle_on">#2E7D47</color>
+    <color name="icon_on">#FFFFFF</color>
+    <color name="status_on">#1E6B3A</color>
+
+    <color name="ind_off_bg">#FFFFFF</color>
+    <color name="ind_off_border">#D0D3D6</color>
+    <color name="circle_off">#DADCE0</color>
+    <color name="icon_off">#44474E</color>
+    <color name="status_off">#5F6368</color>
+
+    <!-- Pantalla de configuración -->
+    <color name="ui_bg">#F6F7F8</color>
+    <color name="ui_surface">#FFFFFF</color>
+    <color name="ui_stroke">#E3E5E8</color>
+    <color name="ui_text">#1B1C1F</color>
+    <color name="ui_text2">#4A4D52</color>
+    <color name="ui_text3">#686C72</color>
+    <color name="ui_accent">#2E7D47</color>
+    <color name="ui_on_accent">#FFFFFF</color>
+    <color name="ui_tonal">#DCEFE1</color>
+    <color name="ui_on_tonal">#1E5631</color>
+    <color name="ok">#2E7D47</color>
+    <color name="ok_cont">#E3F3E7</color>
+    <color name="warn">#8A5100</color>
+    <color name="warn_cont">#FFF1DA</color>
+    <color name="err">#B3261E</color>
+    <color name="err_cont">#FCE8E6</color>
+    <color name="code_bg">#F1F3F4</color>
+
+    <!-- Fondo del ícono de la app (igual en ambos modos) -->
+    <color name="launcher_bg">#22352A</color>
+</resources>

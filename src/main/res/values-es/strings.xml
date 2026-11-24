@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_desc">Activa y desactiva la depuración USB con un toque</string>
+
+    <!-- Widget -->
+    <string name="w_title_2">Depuración</string>
+    <string name="w_title_3">Depuración USB</string>
+    <string name="w_on">Activada</string>
+    <string name="w_off">Desactivada</string>
+    <string name="w_setup">Toca para configurar</string>
+    <string name="w_cd_on">Depuración USB activada</string>
+    <string name="w_cd_off">Depuración USB desactivada</string>
+    <string name="w_cd_setup">ADB Switch necesita configuración. Toca para abrir la guía.</string>
+
+    <!-- Configuración -->
+    <string name="setup_subtitle">Guía de configuración</string>
+    <string name="summary_ok_title">Todo listo</string>
+    <string name="summary_ok_sub">El widget está listo para usarse.</string>
+    <string name="summary_bad_title">%d por resolver</string>
+    <string name="summary_bad_sub">Sigue los pasos marcados abajo. Esta pantalla vuelve a revisar cada vez que regresas.</string>
+    <string name="section_checks">Revisión</string>
+    <string name="label_symptom">Síntoma</string>
+    <string name="label_fix">Solución</string>
+
+    <string name="perm_title">Permiso para cambiar el ajuste</string>
+    <string name="perm_ok">Otorgado</string>
+    <string name="perm_bad">No otorgado</string>
+    <string name="perm_symptom">Al tocar el widget se abre esta guía y no cambia nada.</string>
+    <string name="perm_fix">Android solo permite otorgar este permiso desde un computador. Conecta el teléfono con la depuración USB activa y ejecuta este comando una vez (y de nuevo si reinstalas la app):</string>
+    <string name="perm_copy">Copiar comando</string>
+    <string name="copied">Comando copiado</string>
+
+    <string name="state_title">Lectura del estado actual</string>
+    <string name="state_on">Funciona · depuración activada</string>
+    <string name="state_off">Funciona · depuración desactivada</string>
+    <string name="state_bad">No disponible</string>
+    <string name="state_symptom">El widget siempre muestra Desactivada, aunque la depuración esté activa.</string>
+    <string name="state_fix">Este teléfono no expone el estado del servicio adb y no hay arreglo desde el teléfono. Reporta tu modelo y versión de Android para agregar soporte.</string>
+    <string name="state_report">Reportar en GitHub</string>
+
+    <string name="dev_title">Opciones de desarrollador</string>
+    <string name="dev_ok">Habilitadas</string>
+    <string name="dev_warn">Depuración apagada</string>
+    <string name="dev_symptom">Al tocar el widget la depuración no se vuelve a encender (regresa a OFF). Ignóralo si recién la apagaste con el widget.</string>
+    <string name="dev_fix">Probablemente las Opciones de desarrollador están desactivadas. Abre Acerca del teléfono, toca 7 veces Número de compilación y luego activa Depuración por USB en Opciones de desarrollador.</string>
+    <string name="dev_open">Opciones de desarrollador</string>
+    <string name="dev_about">Acerca del teléfono</string>
+    <string name="not_available">Esta pantalla no está disponible en este teléfono</string>
+
+    <string name="widget_title">Widget en la pantalla de inicio</string>
+    <string name="widget_ok">Agregado (%d)</string>
+    <string name="widget_bad">No agregado</string>
+    <string name="widget_symptom">El widget aún no está en ninguna pantalla de inicio.</string>
+    <string name="widget_fix">Mantén presionada la pantalla de inicio → Widgets → ADB Switch, o usa el botón.</string>
+    <string name="widget_add">Agregar widget</string>
+
+    <string name="ad_label">Publicidad</string>
+    <string name="privacy_options">Opciones de privacidad</string>
+
+    <string name="faq_title">Problemas frecuentes</string>
+    <string-array name="faq_symptoms">
+        <item>Al tocar el widget se abre esta guía</item>
+        <item>El computador se desconecta al apagar la depuración</item>
+        <item>El widget dice Activada pero la depuración USB está apagada</item>
+        <item>El widget muestra un estado equivocado tras cambiarlo en Ajustes</item>
+        <item>El widget vuelve solo a OFF</item>
+    </string-array>
+    <string-array name="faq_fixes">
+        <item>Falta el permiso, normalmente tras reinstalar. Ejecuta el comando adb indicado arriba.</item>
+        <item>Es lo esperado: apagar la depuración USB cierra toda conexión adb.</item>
+        <item>La depuración inalámbrica está activa y mantiene el servicio adb corriendo. Desactívala en Opciones de desarrollador.</item>
+        <item>El widget solo se actualiza al tocarlo. Tócalo, o abre esta app para refrescarlo.</item>
+        <item>Las Opciones de desarrollador están desactivadas. Actívalas (Número de compilación ×7) y vuelve a intentar.</item>
+    </string-array>
+</resources>

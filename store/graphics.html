@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ADB Switch store graphics</title>
+<!-- Fuente de los gráficos de Play: se capturan #icon (512x512) y #feature (1024x500) con un navegador. -->
+<style>
+  body { margin: 0; background: #444; font-family: Roboto, "Segoe UI", system-ui, sans-serif; }
+  .bug { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  #icon { width: 512px; height: 512px; background: #22352A; display: flex; align-items: center; justify-content: center; }
+  #feature { width: 1024px; height: 500px; background: #121316; display: flex; align-items: center; gap: 56px; padding: 0 72px; box-sizing: border-box; color: #E8E9EB; }
+  .brand { display: flex; flex-direction: column; gap: 18px; flex: 1; }
+  .logo { width: 88px; height: 88px; border-radius: 26px; background: #22352A; display: flex; align-items: center; justify-content: center; }
+  h1 { margin: 0; font-size: 56px; font-weight: 600; letter-spacing: -0.5px; }
+  p { margin: 0; font-size: 26px; color: #B9BCC0; line-height: 1.35; }
+  .stack { display: flex; flex-direction: column; gap: 22px; }
+  .w { width: 400px; height: 84px; border-radius: 42px; background: #2A2B2F; position: relative; box-sizing: border-box; }
+  .ghost { position: absolute; top: 0; bottom: 0; width: 130px; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; letter-spacing: .6px; color: #A9ACAA; }
+  .ind { position: absolute; top: 6px; height: 72px; width: 258px; border-radius: 36px; box-sizing: border-box; display: flex; align-items: center; gap: 14px; padding: 0 16px 0 9px; }
+  .on .ind { right: 6px; background: #22352A; border: 2px solid #A8DAB5; }
+  .off .ind { left: 6px; background: #3A3B40; border: 2px solid #3A3B40; }
+  .on .ghost { left: 6px; } .off .ghost { right: 6px; }
+  .circle { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .on .circle { background: #A8DAB5; } .off .circle { background: #4A4B50; }
+  .t1 { font-size: 19px; font-weight: 500; color: #E3E3E3; white-space: nowrap; }
+  .t2 { font-size: 16px; }
+  .on .t2 { color: #A8DAB5; } .off .t2 { color: #A9ACAA; }
+</style>
+</head>
+<body>
+<div id="icon">
+  <svg width="300" height="300" viewBox="0 0 24 24" class="bug" stroke="#A8DAB5" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg>
+</div>
+
+<div id="feature">
+  <div class="brand">
+    <div class="logo"><svg width="56" height="56" viewBox="0 0 24 24" class="bug" stroke="#A8DAB5" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></div>
+    <h1>ADB Switch</h1>
+    <p>USB debugging,<br>one tap away.</p>
+  </div>
+  <div class="stack">
+    <div class="w on"><span class="ghost">OFF</span><div class="ind"><span class="circle"><svg width="26" height="26" viewBox="0 0 24 24" class="bug" stroke="#0A3818" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></span><span><div class="t1">USB debugging</div><div class="t2">Enabled</div></span></div></div>
+    <div class="w off"><div class="ind"><span class="circle"><svg width="26" height="26" viewBox="0 0 24 24" class="bug" stroke="#C4C7C5" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></span><span><div class="t1">USB debugging</div><div class="t2">Disabled</div></span></div><span class="ghost">ON</span></div>
+  </div>
+</div>
+<!-- Captura 1 de la tienda (1080x2160): el widget en varios anchos, sobre fondo neutro -->
+<style>
+  #phone { width: 1080px; height: 2160px; background: #1A1C1F; color: #E8E9EB; box-sizing: border-box; padding: 200px 90px; display: flex; flex-direction: column; gap: 70px; }
+  #phone h2 { margin: 0; font-size: 84px; font-weight: 600; line-height: 1.1; letter-spacing: -1px; }
+  #phone .sub { font-size: 40px; color: #B9BCC0; line-height: 1.35; margin-top: -30px; }
+  #phone .cap { font-size: 30px; color: #9A9EA4; letter-spacing: 1px; margin-bottom: -46px; }
+  #phone .w { height: 150px; border-radius: 75px; }
+  #phone .ghost { font-size: 30px; width: 30%; }
+  #phone .ind { top: 10px; height: 130px; border-radius: 65px; gap: 26px; padding: 0 30px 0 16px; width: 66%; }
+  #phone .on .ind { right: 10px; } #phone .off .ind { left: 10px; }
+  #phone .circle { width: 98px; height: 98px; }
+  #phone .t1 { font-size: 36px; } #phone .t2 { font-size: 30px; }
+  #phone .small .ind { width: 74px; padding: 0; justify-content: center; }
+</style>
+<div id="phone">
+  <h2>USB debugging,<br>one tap away.</h2>
+  <div class="sub">A home-screen switch. Resize it from 1 to 4 cells.</div>
+  <div class="cap">4 × 1</div>
+  <div class="w on" style="width:900px"><span class="ghost">OFF</span><div class="ind"><span class="circle"><svg width="48" height="48" viewBox="0 0 24 24" class="bug" stroke="#0A3818" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></span><span><div class="t1">USB debugging</div><div class="t2">Enabled</div></span></div></div>
+  <div class="cap">3 × 1</div>
+  <div class="w off" style="width:640px"><div class="ind"><span class="circle"><svg width="48" height="48" viewBox="0 0 24 24" class="bug" stroke="#C4C7C5" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></span><span><div class="t1">ADB</div><div class="t2">Disabled</div></span></div><span class="ghost">ON</span></div>
+  <div class="cap">1 × 1</div>
+  <div class="w on small" style="width:200px"><div class="ind" style="width:120px"><span class="circle"><svg width="48" height="48" viewBox="0 0 24 24" class="bug" stroke="#0A3818" stroke-width="1.8"><path d="M8 6.5a4 4 0 0 1 8 0"/><rect x="7" y="7" width="10" height="12" rx="5"/><path d="M12 11v8M3 13h4M17 13h4M4 7l3 2M20 7l-3 2M4 19l3-2M20 19l-3-2"/></svg></span></div></div>
+  <div class="sub" style="margin-top:20px">Tap anywhere to toggle. Light &amp; dark theme.</div>
+</div>
+</body>
+</html>

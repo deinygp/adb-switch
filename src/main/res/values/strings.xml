@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">ADB Switch</string>
+    <string name="widget_desc">Turn USB debugging on and off with one tap</string>
+
+    <!-- Widget -->
+    <string name="w_title_1" translatable="false">ADB</string>
+    <string name="w_title_2">Debugging</string>
+    <string name="w_title_3">USB debugging</string>
+    <string name="w_on">Enabled</string>
+    <string name="w_off">Disabled</string>
+    <string name="w_setup">Tap to set up</string>
+    <string name="w_cd_on">USB debugging enabled</string>
+    <string name="w_cd_off">USB debugging disabled</string>
+    <string name="w_cd_setup">ADB Switch needs setup. Tap to open the guide.</string>
+
+    <!-- Setup -->
+    <string name="setup_subtitle">Setup guide</string>
+    <string name="summary_ok_title">All set</string>
+    <string name="summary_ok_sub">The widget is ready to use.</string>
+    <string name="summary_bad_title">%d to fix</string>
+    <string name="summary_bad_sub">Follow the steps marked below. This screen re-checks every time you come back.</string>
+    <string name="section_checks">Checks</string>
+    <string name="label_symptom">Symptom</string>
+    <string name="label_fix">Fix</string>
+
+    <string name="perm_title">Permission to change the setting</string>
+    <string name="perm_ok">Granted</string>
+    <string name="perm_bad">Not granted</string>
+    <string name="perm_symptom">Tapping the widget opens this guide and nothing changes.</string>
+    <string name="perm_fix">Android only allows granting this permission from a computer. Connect the phone with USB debugging on and run this command once (again after reinstalling the app):</string>
+    <string name="perm_copy">Copy command</string>
+    <string name="copied">Command copied</string>
+
+    <string name="state_title">Reading the current state</string>
+    <string name="state_on">Working · debugging is on</string>
+    <string name="state_off">Working · debugging is off</string>
+    <string name="state_bad">Not available</string>
+    <string name="state_symptom">The widget always shows Disabled, even when debugging is on.</string>
+    <string name="state_fix">This phone does not expose the state of the adb service, and there is no fix on the phone side. Report your model and Android version so support can be added.</string>
+    <string name="state_report">Report on GitHub</string>
+
+    <string name="dev_title">Developer options</string>
+    <string name="dev_ok">Enabled</string>
+    <string name="dev_warn">Debugging is off</string>
+    <string name="dev_symptom">Tapping the widget does not turn debugging back on (it returns to OFF). Ignore this if you just turned it off with the widget.</string>
+    <string name="dev_fix">Developer options are probably disabled. Open About phone, tap Build number 7 times, then turn on USB debugging in Developer options.</string>
+    <string name="dev_open">Developer options</string>
+    <string name="dev_about">About phone</string>
+    <string name="not_available">This screen is not available on this phone</string>
+
+    <string name="widget_title">Widget on the home screen</string>
+    <string name="widget_ok">Added (%d)</string>
+    <string name="widget_bad">Not added</string>
+    <string name="widget_symptom">The widget is not on any home screen yet.</string>
+    <string name="widget_fix">Long-press the home screen → Widgets → ADB Switch, or use the button.</string>
+    <string name="widget_add">Add widget</string>
+
+    <string name="ad_label">Ad</string>
+    <string name="privacy_options">Privacy options</string>
+
+    <string name="faq_title">Troubleshooting</string>
+    <string-array name="faq_symptoms">
+        <item>Tapping the widget opens this guide</item>
+        <item>The computer disconnects when I turn debugging off</item>
+        <item>The widget shows Enabled but USB debugging is off</item>
+        <item>The widget shows the wrong state after changing it in Settings</item>
+        <item>The widget turns itself back to OFF</item>
+    </string-array>
+    <string-array name="faq_fixes">
+        <item>The permission is missing, usually after reinstalling. Run the adb command shown above.</item>
+        <item>Expected: turning USB debugging off closes every adb connection.</item>
+        <item>Wireless debugging is on and keeps the adb service running. Turn it off in Developer options.</item>
+        <item>The widget only updates when tapped. Tap it, or open this app to refresh it.</item>
+        <item>Developer options are disabled. Enable them (Build number ×7) and try again.</item>
+    </string-array>
+</resources>

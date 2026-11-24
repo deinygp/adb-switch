@@ -1,4 +1,9 @@
 out/
 *.apk
-.playwright-mcp/
 *.idsig
+.playwright-mcp/
+build/
+.gradle/
+local.properties
+*.jks
+*.keystore
