@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IDs reales de AdMob (solo build release). Debug usa los IDs de prueba de src/main. -->
+<resources>
+    <string name="admob_app_id" translatable="false">ca-app-pub-2206986148283514~5512365799</string>
+    <string name="ad_unit_bottom" translatable="false">ca-app-pub-2206986148283514/3568728735</string>
+    <string name="ad_unit_inline" translatable="false">ca-app-pub-2206986148283514/9260039113</string>
+</resources>

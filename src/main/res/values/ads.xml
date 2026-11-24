@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- IDs de AdMob. Hoy son los IDs de PRUEBA de Google: reemplazar por los reales de la cuenta antes de publicar. -->
+<!-- IDs de PRUEBA de Google (debug). Los reales están en src/release/res/values/ads.xml. -->
 <resources>
     <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="ad_unit_bottom" translatable="false">ca-app-pub-3940256099942544/9214589741</string>
