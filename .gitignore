@@ -1,0 +1,4 @@
+out/
+*.apk
+.playwright-mcp/
+*.idsig

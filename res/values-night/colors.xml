@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo oscuro (colores del prototipo C2) -->
+<resources>
+    <color name="widget_bg">#2A2B2F</color>
+    <color name="ghost">#A9ACAA</color>
+    <color name="title">#E3E3E3</color>
+
+    <color name="ind_on_bg">#22352A</color>
+    <color name="ind_on_border">#A8DAB5</color>
+    <color name="circle_on">#A8DAB5</color>
+    <color name="icon_on">#0A3818</color>
+    <color name="status_on">#A8DAB5</color>
+
+    <color name="ind_off_bg">#3A3B40</color>
+    <color name="ind_off_border">#3A3B40</color>
+    <color name="circle_off">#4A4B50</color>
+    <color name="icon_off">#C4C7C5</color>
+    <color name="status_off">#A9ACAA</color>
+</resources>
